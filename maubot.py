@@ -1,7 +1,6 @@
 import os
 import yaml
 
-
 with open("maubot.yaml") as f:
     maubot = yaml.safe_load(f)
 maubot["version"] = os.environ["BOT_VERSION"]

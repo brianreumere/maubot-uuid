@@ -1,7 +1,7 @@
 maubot: 0.1.0
 id: info.mutualaid.maubot.uuid
-version: 0.0.1
+version: 0.0.4
 license: ISC
 modules:
-  - uuid
-main_class: Uuid
+  - uuid_bot
+main_class: UuidBot

@@ -1,0 +1,7 @@
+maubot: 0.1.0
+id: info.mutualaid.maubot.uuid
+version: 0.0.1
+license: ISC
+modules:
+  - uuid
+main_class: Uuid

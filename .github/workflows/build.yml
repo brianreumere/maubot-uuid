@@ -42,7 +42,9 @@ jobs:
           source .venv/bin/activate
           pip install maubot pyyaml
       - name: Populate version
-        run: python maubot.py
+        run: |
+          source .venv/bin/activate
+          python maubot.py
         env:
           BOT_VERSION: ${{ steps.ref.outputs.version }}
       - name: Build plugin

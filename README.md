@@ -1,3 +1,3 @@
-# maubot-uuid
+# maubot-uuidbot
 
-A Maubot plugin to generate UUIDs.
+A Maubot plugin to generate version 4 (unique) UUIDs.

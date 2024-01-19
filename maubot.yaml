@@ -1,6 +1,6 @@
 maubot: 0.1.0
 id: info.mutualaid.maubot.uuid
-version: 0.0.4
+version: false  # Version is populated by the build workflow
 license: ISC
 modules:
   - uuid_bot

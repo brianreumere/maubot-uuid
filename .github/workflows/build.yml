@@ -45,6 +45,7 @@ jobs:
         run: |
           source .venv/bin/activate
           python maubot.py
+          cat maubot.yaml
         env:
           BOT_VERSION: ${{ steps.ref.outputs.version }}
       - name: Build plugin
@@ -53,11 +54,11 @@ jobs:
           mbc build
       - name: Create release
         run: |
-          gh release create "$BOT_VERSION" \
-            --title "$BOT_VERSION" \
+          gh release create "v${BOT_VERSION}" \
+            --title "v${BOT_VERSION}" \
             --generate-notes \
             --verify-tag \
-            *-"$BOT_VERSION".mbp
+            *-v"$BOT_VERSION".mbp
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BOT_VERSION: ${{ steps.ref.outputs.version }}
